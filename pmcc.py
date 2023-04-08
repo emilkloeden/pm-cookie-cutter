@@ -15,12 +15,12 @@ def main():
     
     pm_cc_dir = Path(__file__).parent
     pm_cc_project_name_directory = pm_cc_dir / "project_name"
-    pm_cc_src_project_name_sub_directory = pm_cc_project_name_directory / "src" / "project_name"
+    pm_cc_src_project_name_sub_directory = pm_cc_project_name_directory / "src" / "project_name".replace("-","_")
     
     project_location = Path(project_variables["location"])
     project_location.mkdir(exist_ok=False)
     try:
-        subprocess.run(["gitx", "init"], cwd=project_location)
+        subprocess.run(["git", "init"], cwd=project_location)
     except:
         print("Git not found, skipping the initiation of a repository...")
     src_dir = project_location / "src"

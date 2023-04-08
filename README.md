@@ -1,6 +1,6 @@
 # pm-cookie-cutter
 
-_pm-cookie-cutter_ or Poor man's cookie cutter is a single-file python script whose sole purpose is to help scaffold out a folder structure for creating python packages that can be installed using `pip`. Perhaps humourously this project doesn't comply with the required file structure.
+_pm-cookie-cutter_ (Poor man's cookie cutter) is a single-file python script with the sole purpose to help scaffold out a folder structure for creating python packages that can be installed using `pip`. Perhaps humourously this project doesn't comply with the required file structure.
 
 # Installation
 
@@ -9,9 +9,11 @@ git clone this repository.
 # Usage
 
 Linux:
+
 `python3 ./pmcc.py`
 
 Windows:
+
 `py.exe .\pmcc.py`
 
 Then follow the prompts. This will then create a project in the target location like so
