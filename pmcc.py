@@ -31,6 +31,7 @@ def main():
     resources_dir.mkdir()
     tests_dir = project_location / "tests"
     tests_dir.mkdir()
+    copy_files(pm_cc_dir, project_name_dir, [".gitignore"])
     copy_files(pm_cc_src_project_name_sub_directory, project_name_dir, ["__init__.py"])
     copy_files(pm_cc_project_name_directory, project_location, ["LICENSE", "setup.py"])
     copy_file_with_replacements(pm_cc_project_name_directory, project_location, "pyproject.toml", project_variables)
