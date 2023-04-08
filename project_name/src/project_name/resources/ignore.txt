@@ -1,0 +1,1 @@
+This is only here so that git will recognise the parent directory. It is not used by pm-cookie-cutter.
